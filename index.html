@@ -20,25 +20,25 @@ var courseTitle = "Python Portal  <span id='termName'>(Summer &lsquo;19)</span>"
 /* ************* INSTRUCTORS: EDIT IN THIS REGION  ********************* */
 
 /* ************* EACH TERM EDIT ZOOM SECTION LINKS ********************* */
-var section1ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
-var section2ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
-var section3ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
-var section4ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
+// var section1ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
+// var section2ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
+// var section3ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
+// var section4ZoomLinks = ["179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279","179123279", "179123279", "179123279", "179123279", "179123279", "179123279", "179123279"];
 
 /* ************** EACH TERM: CHANGE EXAM DATES - AUTO ACTIVATE LINK **** */
-var exam1Date = "2019-06-25";	/* in form YYYY-MM-DD */
-var exam2Date = "2019-07-20";
+// var exam1Date = "2019-06-25";	/* in form YYYY-MM-DD */
+// var exam2Date = "2019-07-20";
 
 /* ************* EACH TERM EDIT FOR WEEK DATES ************************* */
-var datesOfWeek = ["May 7-11", "May 14-18", "May 21-25", "May 28-Jun 1","Jun 4-8", "Jun 11-15", "Jun 18-22", "Jun 25-29","Jul 2-6", "Jul 9-13", "Jul 16-20", "Jul 23-27", "Jul 20-Aug 3", "Aug 6-10"];
+// var datesOfWeek = ["May 7-11", "May 14-18", "May 21-25", "May 28-Jun 1","Jun 4-8", "Jun 11-15", "Jun 18-22", "Jun 25-29","Jul 2-6", "Jul 9-13", "Jul 16-20", "Jul 23-27", "Jul 20-Aug 3", "Aug 6-10"];
 
 /* ************* EACH TERM EDIT FOR WEEKLY SLIDE SETS ******************* */
-var sessionsLinkBase = "https://github.com/UCB-INFO-PYTHON/assignments_upstream_summer19/tree/master/";
-var sessionLinks = [
-	"week_01", "week_02", "week_03", "week_04", "week_05", "week_06", "week_07", "week_08", "week_09", "week_10", "week_11", "week_12", "week_13", "week_14"];
+// var sessionsLinkBase = "https://github.com/UCB-INFO-PYTHON/assignments_upstream_summer19/tree/master/";
+// var sessionLinks = [
+// 	"week_01", "week_02", "week_03", "week_04", "week_05", "week_06", "week_07", "week_08", "week_09", "week_10", "week_11", "week_12", "week_13", "week_14"];
 
 /* ************* COMMUNICATION OPTIONS: SLACK ************************* */
-var slackLink = "https://ucbischool.slack.com/messages/G4FAZ2DPA/";
+// var slackLink = "https://ucbischool.slack.com/messages/G4FAZ2DPA/";
 
 /* ************* COMMUNICATION OPTIONS: NOT USED ********************** */
 var chatURLs = ['slack','other'];
@@ -63,6 +63,7 @@ var tutorContact = "tutorContact.txt";
 <title>W200 Python Portal</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="w200-config.js"></script>
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="w200.js">
 <script src="jquery.min.js"></script>
@@ -78,24 +79,15 @@ var tutorContact = "tutorContact.txt";
 	<h1 id="courseTitle"></h1>
 
 	<p><a href="#instructors"><img src="i/avatarIcon.png" width="25px"/> Instructors</a> <span class="bars">|</span>
-
 	<a href="#chat"><img src="i/toolsIcon.png" width="25px"/> Online Tools</a> <span class="bars">|</span>
-
 	<a href="Summer_Syllabus_2019.pdf"><img src="i/syllabusIcon.png" width="25px"/> Syllabus (pdf)</a> <span class="bars">|</span>
-
 	<a href="#students"><img src="i/studentAvatar.png" width="25px"/> Students</a> <span class="bars">|</span>
-
 	<a href="https://github.prod.oc.2u.com/UCB-INFO-PYTHON" target="new"><img src="i/githubIcon.png" width="25px"/> GitHub</a> <span class="bars">|</span>
-
 	<a href="https://ucbischool.slack.com/messages/C5AL99BU6/" target="new"><img src="i/slackIconNew.png" width="25px"/>  Slack</a> <span class="bars">|</span>
-
 	<a href="#projects"><img src="i/projectsIcon.png" width="25px"/> Projects Showcase</a> <span class="bars">|</span>
-
 	<a href="#resources"><img src="i/resourcesIcon.png" width="25px"/> Resources</a> <span class="bars">|</span>
-
 	<a href="#exams"><img src="i/examIcon.png" width="25px"/> Exams</a> <span class="bars">|</span>
-
-	<a href=""><img src="i/calIcon.png" width="25px"/> ISVC</a>
+	<a href="https://learn.datascience.berkeley.edu/login" target="new"><img src="i/calIcon.png" width="25px"/> ISVC</a>
 	</p>
 
 	<!--
@@ -587,7 +579,7 @@ Links to readings appear in the syllabus pdf; view Video Async videos via ISVC.
  <div class="col-sm-4">
 	<h3 id="resources"><img src="i/resourcesIcon.png" width="25px"/> Resources, Updates</h3>
 	<p>
-	See <a href="​https://docs.google.com/spreadsheets/d/1G3HJ7tp0gPGU3Ido_kM1rjiwLOLQ2Bzm5H3t9daluyg/edit?usp=sharing" target="new"> this sheet</a> for latest updates, if any, to calendar dates.</p>
+	See <a href="https://docs.google.com/spreadsheets/d/1G3HJ7tp0gPGU3Ido_kM1rjiwLOLQ2Bzm5H3t9daluyg/edit?usp=sharing" target="new"> this sheet</a> for latest updates, if any, to calendar dates.</p>
 	<p>Review Sheets: Python, NumPy, Pandas - review sheets.</p>
 	<p>Other resources [tba]</p>
 
@@ -602,8 +594,8 @@ Links to readings appear in the syllabus pdf; view Video Async videos via ISVC.
 </div> <!-- row -->
 
 <hr />
-<p class="smallInfo">2019 GB.
-Generated on <span id="datestamp"></span></p>
+<p class="smallInfo">2019 <a href="mailto:gbenoit@berkeley.edu">Contact GB</a>.
+Generated on <span id="datestamp"></span>.  v.1</p>
 </div> <!-- container -->
 
 
